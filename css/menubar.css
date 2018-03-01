@@ -1,0 +1,93 @@
+*{
+  box-sizing: border-box;
+
+}
+#main-nav {
+  background-color: #822C66;
+  height: 52px;
+  display: block;
+  -moz-box-shadow: 0 0 25px 2px black;
+  -webkit-box-shadow: 0 0 25px 2px black;
+
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+
+}
+
+#main-nav img {
+  width: 140px;
+  height: 52px;
+  background-color: #822C66;
+
+}
+
+#main-nav ul li {
+  display: inline-block;
+  float: left;
+  position: relative;
+  margin-top: 0px;
+  margin-left: 0px;
+  height: 52px;
+  width: 140px;
+  text-align: center;
+  background-color: #822C66;
+  border-right: solid white 1px;
+
+}
+
+.submenu{
+  border-left: solid white 1px;
+  margin-left: -1px;
+}
+
+
+#main-nav #login ul li {
+  display: inline-block;
+  float: right;
+  position: relative;
+  margin-top: 0px;
+  margin-left: 0px;
+  height: 52px;
+  width: 140px;
+  text-align: center;
+  background-color: #822C66;
+  border-right: solid w100%hite 1px;
+
+
+
+}
+
+.submenu {
+  position: absolute;
+  z-index: 1;
+  width: auto;
+  display: none;
+  margin-top: 28px;
+
+}
+
+li:hover .submenu {
+  display: block;
+
+}
+
+#main-nav ul li:hover {
+  background-color: #692452;
+
+}
+
+#main-nav #login ul li:hover {
+  background-color: #692452;
+
+}
+#main-nav ul li a {
+  text-decoration: none;
+  position: relative;
+  display: block;
+  top: 25%;
+}
