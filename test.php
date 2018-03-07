@@ -9,7 +9,15 @@ $db = $dbhandler->connect();
 $producthandler = new ProductHandler();
 $pd = $producthandler->getProducts(5, 0, 1, "name", "ASC");
 
-echo "<pre>";
-print_r($pd);
-echo "</pre>";
+function loadProducts(){
+  global $pd;
+  foreach ($pd as $product){
+    ?>
+          <div class="tuote">
+          <div class="kuva"> <img src=" <?= $product["meta"][1]; ?>" alt="kuva"></div>
+          <div class="nimi"> <a href=""><?= $product["name"]; ?></a> </div>
+          <div class="hinta"> <p><?= $product["price"]; ?></p></div>
+    <?php
+      }
+    }
 ?>

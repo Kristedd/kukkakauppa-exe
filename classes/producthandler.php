@@ -26,8 +26,7 @@ class ProductHandler {
           $row['meta'] = $this->getProductMeta($row['id']);
           $rows[] = $row;
       }
-
-      print_r($this->getProductMeta(1, 0));
+      
       return $rows;
     } else {
       die("0 rows");

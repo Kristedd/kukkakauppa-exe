@@ -1,6 +1,6 @@
 <div id="main-nav">
   <ul>
-    <li><img src="http://concepts.logonerds.com/images/detail/58/Floral%20Shop%20Logo%20Design.jpg" alt="logo"></li>
+    <li><img src="https://pbs.twimg.com/profile_images/859153231737491456/M_uvM70Z_400x400.jpg" alt="logo"></li>
     <li> <a href="index.php">Etusivu</a> </li>
     <li> <a href="tuotteet.php">Tuotteet</a>
     <ul class="submenu">

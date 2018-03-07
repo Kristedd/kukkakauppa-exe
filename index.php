@@ -38,11 +38,11 @@ include "menu.php";
   </div>
 
   <div id="tarjouksia">
-  <h2>Uutisia</h2>
+  <h2>Tarjouksia</h2>
 
-    <h2>2.1.2016 </h2><p>tarjouse tarjouse tarjouse tarjouse tarjouse tarjouse tarjouse tarjouse tarjouse tarjouse tarjouse tarjouse .</p>
-    <h2>14.12.2015 </h2><p>tarjouse tarjouse tarjouse tarjouse tarjouse tarjouse tarjouse tarjouse tarjouse tarjouse tarjouse tarjouse</p>
-    <h2>1.9.2015 </h2><p>Nyt on tarjouse tarjouse tarjouse tarjouse tarjouse tarjouse tarjouse tarjouse tarjouse tarjouse tarjouse tarjouse</p>
+    <h2>2.1.2016 </h2><p>Tarjous Tarjous Tarjous Tarjous Tarjous Tarjous Tarjous Tarjous Tarjous Tarjous Tarjous Tarjous .</p>
+    <h2>14.12.2015 </h2><p>Tarjous Tarjous Tarjous Tarjous Tarjous Tarjous Tarjous Tarjous Tarjous Tarjous Tarjous Tarjous</p>
+    <h2>1.9.2015 </h2><p>Nyt on Tarjous Tarjous Tarjous Tarjous Tarjous Tarjous Tarjous Tarjous Tarjous Tarjous Tarjous Tarjous</p>
 
   </div>
   <!-- Footer -->

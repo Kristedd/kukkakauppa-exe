@@ -13,7 +13,8 @@
 
   <?php
   include "menu.php";
-
+  include "db.php";
+  include "classes/producthandler.php";
   ?>
 
   <!-- main page -->
@@ -29,29 +30,33 @@
     <div id="header">
     <h1>Tuotteet</h1>
   </div>
+  <div class="tuotteet">
 
-    <div class="tuotteet">
-      <div class="tuote">
-        <div class="kuva"> <img src="images/sisakasvit/joulutahti - 20e.jpg" alt="kukka">
-        </div>
-        <div class="nimi"> <a href=""> Kukka </a> </div>
+<?php
+$dbhandler = new DatabaseHandler();
+$db = $dbhandler->connect();
+
+$producthandler = new ProductHandler();
+$pd = $producthandler->getProducts(5, 0, 1, "name", "ASC");
+
+foreach ($pd as $product){
+  ?>
+    <div class="tuote">
+      <div class="kuva">
+        <img src=" <?= $product["meta"][1]; ?>" alt="kuva">
       </div>
-      <div class="tuote">
-        <p>asd</p>
+      <div class="nimi">
+        <a href=""> <?= $product["name"]; ?></a>
       </div>
-      <div class="tuote">
-        <p>asd</p>
-      </div>
-      <div class="tuote">
-        <p>asd</p>
-      </div>
-      <div class="tuote">
-        <p>asd</p>
+      <div class="hinta">
+        <p> <?= $product["price"]; ?></p>
       </div>
     </div>
+  <?php
+}
 
-
-
+?>
+</div>
 
   </div>
   <!-- Footer -->
