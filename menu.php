@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <div id="main-nav">
   <ul>
     <li><img src="https://pbs.twimg.com/profile_images/859153231737491456/M_uvM70Z_400x400.jpg" alt="logo"></li>

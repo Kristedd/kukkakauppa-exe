@@ -3,20 +3,19 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta charset="UTF-8">
-  <title>Tuotteet</title>
+  <title>"tuote"</title>
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/menubar.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+
 </head>
 <body>
   <!-- Header -->
 
-  <?php
-  include "menu.php";
-  include "db.php";
-  include "classes/producthandler.php";
-  ?>
+<?php
+include "menu.php";
 
+?>
   <!-- main page -->
   <div id="side-bar">
     <ul>
@@ -28,35 +27,14 @@
   </div>
   <div id="tuote-main">
     <div id="header">
-    <h1>Tuotteet</h1>
+    <h1></h1>
   </div>
-  <div class="tuotteet">
 
-<?php
-$dbhandler = new DatabaseHandler();
-$db = $dbhandler->connect();
-
-$producthandler = new ProductHandler();
-$pd = $producthandler->getProducts(15, 0, 1, "name", "ASC");
-
-foreach ($pd as $product){
-  ?>
-    <div class="tuote">
-      <div class="kuva">
-        <img src=" <?= $product["meta"][1]; ?>" alt="kuva">
-      </div>
-      <div class="nimi">
-        <a href=""> <?= $product["name"]; ?></a>
-      </div>
-      <div class="hinta">
-        <p> <?= $product["price"]; ?></p>
-      </div>
+    <div class="tuotteet">
+      
     </div>
-  <?php
-}
 
-?>
-</div>
+
 
   </div>
   <!-- Footer -->

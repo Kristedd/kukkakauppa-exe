@@ -1,5 +1,4 @@
 <?php
-session_start(); // Starts session.
 
 if(isset($_SESSION['user_id']) && !empty($_SESSION['user_id']) ) { //checks if you have valid session.
   header('Location: .'); //Opens homepage.
