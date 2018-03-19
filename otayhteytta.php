@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,7 +17,7 @@
   include "menu.php";
 
   ?>
-  
+
   <!-- main page -->
   <div id="otayhteytta-main">
     <h1>Ota yhteyttä</h2>

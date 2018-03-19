@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,27 +29,6 @@
     <div id="header">
     <h1>Sisäkasvit</h1>
   </div>
-
-    <div class="tuotteet">
-      <div class="tuote">
-        <div class="kuva"> <img src="images/sisakasvit/joulutahti - 20e.jpg" alt="kukka"> </div>
-        <div class="nimi"> <a href=""> Kukka </a>
-        </div>
-      </div>
-      <div class="tuote">
-        <p>asd</p>
-      </div>
-      <div class="tuote">
-        <p>asd</p>
-      </div>
-      <div class="tuote">
-        <p>asd</p>
-      </div>
-      <div class="tuote">
-        <p>asd</p>
-      </div>
-    </div>
-
 
 
   </div>

@@ -152,17 +152,7 @@ text-align: left;
 
 }
 
-.hinta{
-    width: 100%;
 
-    background-color: white;
-}
-
-.hinta p{
-  margin-top: -5px;
-  background-color: white;
-
-}
 
 #side-bar {
   margin-top: 15px;
@@ -222,6 +212,7 @@ text-align: left;
   margin-left: 2%;
   margin-right: 2%;
   margin-top: 1%;
+  margin-bottom: 25px;
   display: inline-block;
   float: left;
   border: solid 2px black;
@@ -257,6 +248,43 @@ text-align: left;
     color: black;
     text-align: center;
  }
+
+ .hinta{
+     width: 100%;
+     background-color: white;
+ }
+
+ .hinta p{
+   margin-bottom: 0;
+   margin-top: -5px;
+   background-color: white;
+
+ }
+ .addtocart {
+   background-color: white;
+   opacity: 0.0;
+   color: black;
+   width: 196px;
+   height: 145px;
+   text-align: center;
+   text-decoration: none;
+   margin-top: 0px;
+   cursor: pointer;
+   display: block;
+   position: absolute;
+
+ }
+
+  .addtocart:hover{
+    opacity: 0.5;
+  }
+
+  .plus{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 145px;
+    font-size: 60px;
+  }
 
 
 #register-main {
@@ -409,4 +437,20 @@ text-align: left;
   float: right;
   cursor: pointer;
 
+}
+
+.productpic {
+  width: 50%;
+  float: left;
+  background-color: black;
+  height: 600px;
+  overflow: hidden;
+}
+.productpic img {
+  height: 100%;
+}
+.productinfo {
+  width: 50%;
+  float: right;
+  background-color: white;
 }

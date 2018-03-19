@@ -1,9 +1,11 @@
+<?php session_start();
+include "productpageselect.php"?>
 <!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta charset="UTF-8">
-  <title>"tuote"</title>
+  <title><?=$pd["name"]?></title>
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/menubar.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -30,9 +32,20 @@ include "menu.php";
     <h1></h1>
   </div>
 
-    <div class="tuotteet">
-      
+  <div class="productpic">
+    <img src="<?=$pd["meta"][1]?>" alt="">
+
+  </div>
+  <div class="productinfo">
+    <div class="productname">
+      <p><?=$pd["name"]?></p>
     </div>
+    <div class="productdesc">
+      <p><?=$pd["meta"][1]?></p>
+    </div>
+  </div>
+
+
 
 
 

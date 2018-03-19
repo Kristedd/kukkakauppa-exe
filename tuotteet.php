@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -42,11 +43,14 @@ $pd = $producthandler->getProducts(15, 0, 1, "name", "ASC");
 foreach ($pd as $product){
   ?>
     <div class="tuote">
+      <div class="addtocart"> <div class="plus">
+        +
+      </div> </div>
       <div class="kuva">
         <img src=" <?= $product["meta"][1]; ?>" alt="kuva">
       </div>
       <div class="nimi">
-        <a href=""> <?= $product["name"]; ?></a>
+        <a href="productpage.php?id=<?= $product["id"];?>"> <?= $product["name"]; ?></a>
       </div>
       <div class="hinta">
         <p> <?= $product["price"]; ?></p>

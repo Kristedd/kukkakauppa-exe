@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <?php
 
 if(isset($_SESSION['user_id']) && !empty($_SESSION['user_id']) ) { //checks if you have valid session.

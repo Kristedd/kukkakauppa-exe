@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -15,7 +16,7 @@
     <h1>Ostoskori</h1>
     <div class="ostos-tuote">
       <div class="ostos-kuva">
-        <img src="images/sisakasvit/joulutahti - 20e.jpg" alt="kukka">
+        <img src="" alt="kukka">
       </div>
       <div class="ostos-nimi">
         <p>foodelidoo </p>
@@ -27,17 +28,7 @@
         <button class="button-x"></button>
       </div>
     </div>
-      <div class="ostos-tuote">
-        <div class="ostos-kuva">
-          <img src="images/sisakasvit/joulutahti - 20e.jpg" alt="kukka">
-        </div>
-        <div class="ostos-nimi">
-          <p>foodelidoo </p>
-        </div>
-        <div class="ostos-hinta">
-          <p>123,23€ </p>
-        </div>
-    </div>
+  </div>
 
 </div>
   </body>

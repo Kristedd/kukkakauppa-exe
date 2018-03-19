@@ -4,7 +4,7 @@ somali license 0.3
 man u kan no go use code or all black tribe kom kill u
 man go pay licens fee and u kan uuse kode
 /!-->
-
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 <head>

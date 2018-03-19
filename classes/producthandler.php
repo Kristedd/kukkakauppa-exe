@@ -10,7 +10,6 @@ class ProductHandler {
       $limit = " LIMIT " . $amount;
     }
     $sql_products_query = "SELECT * FROM `products` WHERE `published_status` = ? ORDER BY ? " . $order . $limit;
-    $sql = "SELECT * FROM `products`";
 
     $stmt = $db->prepare($sql_products_query);
 
@@ -26,11 +25,36 @@ class ProductHandler {
           $row['meta'] = $this->getProductMeta($row['id']);
           $rows[] = $row;
       }
-      
+
       return $rows;
     } else {
       die("0 rows");
     }
+  }
+
+  function getProduct($product_id, $published = 1){
+    global $db;
+    if(is_int(intval($product_id))){
+      $sql_products_query = "SELECT * FROM `products` WHERE `id` = ? AND `published_status` = ?";
+      $stmt = $db->prepare($sql_products_query);
+      $stmt->bind_param('ii', $product_id, $published);
+      $stmt->execute();
+      $result = $stmt->get_result();
+
+
+      if ($result->num_rows > 0) {
+        $data = $result->fetch_assoc();
+        $data['meta'] = $this->getProductMeta($data['id']);
+        return $data;
+      } else {
+        echo "voi saatana";
+        return false;
+      }
+    } else {
+      echo "error";
+      return false;
+    }
+
   }
 
   private function getProductMeta($product_id) {
