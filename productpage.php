@@ -40,9 +40,17 @@ include "menu.php";
     <div class="productname">
       <p><?=$pd["name"]?></p>
     </div>
-    <div class="productdesc">
-      <p><?=$pd["meta"][1]?></p>
-    </div>
+<?php
+  if(!empty($pd["meta"][2])) {
+    echo "<div class=\"productdesc\">
+    <p>" . $pd["meta"][2] . "</p>
+    </div>";
+  } else {
+     echo "<div class=\"productdesc\">
+     <p>Ei kuvausta...</p>
+     </div>";
+   }
+    ?>
   </div>
 
 
