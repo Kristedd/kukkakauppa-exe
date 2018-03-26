@@ -40,6 +40,13 @@ include "menu.php";
     <div class="productname">
       <p><?=$pd["name"]?></p>
     </div>
+    <div class="productprice">
+      <p><?=$pd["price"]?></p>
+    </div>
+    <div class="productaddtocart">
+      <p>+</p>
+    </div>
+  </div>
 <?php
   if(!empty($pd["meta"][2])) {
     echo "<div class=\"productdesc\">
